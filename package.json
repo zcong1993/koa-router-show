@@ -8,8 +8,10 @@
   },
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
+  "typings": "./index.d.ts",
   "scripts": {
     "test:cov": "jest --coverage --forceExit && npm run lint",
     "test": "npm run lint && jest --forceExit",
