@@ -1,6 +1,6 @@
 {
-  "name": "koa-router-show",
-  "version": "0.0.0",
+  "name": "@zcong/koa-router-show",
+  "version": "0.1.0",
   "description": "show all the routers you defined",
   "repository": {
     "url": "zcong1993/koa-router-show",

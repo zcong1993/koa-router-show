@@ -1,13 +1,13 @@
 
 # koa-router-show
 
-[![NPM version](https://img.shields.io/npm/v/koa-router-show.svg?style=flat)](https://npmjs.com/package/koa-router-show) [![NPM downloads](https://img.shields.io/npm/dm/koa-router-show.svg?style=flat)](https://npmjs.com/package/koa-router-show) [![CircleCI](https://circleci.com/gh/zcong1993/koa-router-show/tree/master.svg?style=shield)](https://circleci.com/gh/zcong1993/koa-router-show/tree/master)  [![codecov](https://codecov.io/gh/zcong1993/koa-router-show/branch/master/graph/badge.svg)](https://codecov.io/gh/zcong1993/koa-router-show)
+[![NPM version](https://img.shields.io/npm/v/@zcong/koa-router-show.svg?style=flat)](https://npmjs.com/package/@zcong/koa-router-show) [![NPM downloads](https://img.shields.io/npm/dm/@zcong/koa-router-show.svg?style=flat)](https://npmjs.com/package/@zcong/koa-router-show) [![CircleCI](https://circleci.com/gh/zcong1993/koa-router-show/tree/master.svg?style=shield)](https://circleci.com/gh/zcong1993/koa-router-show/tree/master)  [![codecov](https://codecov.io/gh/zcong1993/koa-router-show/branch/master/graph/badge.svg)](https://codecov.io/gh/zcong1993/koa-router-show)
  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/zcong1993/donate)
 
 ## Install
 
 ```bash
-$ yarn add koa-router-show
+$ yarn add @zcong/koa-router-show
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ $ yarn add koa-router-show
 ```js
 const Koa = require('koa')
 const Router = require('koa-router')
-const koaRouterShow = require('koa-router-show')
+const koaRouterShow = require('@zcong/koa-router-show')
 
 const app = new Koa()
 const router = new Router()
@@ -23,7 +23,7 @@ const router = new Router()
 router.get('/', () => {})
 router.get('/user/:name', () => {})
 
-// use after registing all the router
+// use it after registing all the routers
 koaRouterShow(router)
 
 app.use(router.routes())
